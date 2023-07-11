@@ -26,10 +26,10 @@ After running the API call and converting the data to a dictionary then to a dat
 ### Latitude VS Max Temperature
 
 #### Northern Hemisphere
-![]()
+![N_Temp](https://github.com/beccasolomon22/python-api-challenge/blob/main/WeatherPy/output_data/N_Temp.png)
 
 #### Southern Hemisphere
-![]()
+![S_Temp](https://github.com/beccasolomon22/python-api-challenge/blob/main/WeatherPy/output_data/S_Temp.png)
 
 Both of the r-squared values for the Northern and Southern Hemispheres are above .4, therefore indicate a correlation between Max Temperature and Latitude.
 
@@ -40,10 +40,10 @@ For the Southern Hemisphere, the is a positive correlation from the latitude val
 ### Latitude VS Humidity
 
 #### Northern Hemisphere
-![]()
+![N_Hum](https://github.com/beccasolomon22/python-api-challenge/blob/main/WeatherPy/output_data/N_Hum.png)
 
 #### Southern Hemisphere
-![]()
+![S_Hum](https://github.com/beccasolomon22/python-api-challenge/blob/main/WeatherPy/output_data/S_Hum.png)
 
 With a .005 r-squared value in the Northern Hemisphere and a .05 r-squared value in the Southern Hemisphere, there is a low correlation between Latitude and Humidity.
 
@@ -52,10 +52,10 @@ Despite low correlation, the Northern Hemisphere seems to indicate a slight upwa
 ### Latitude VS Cloudiness
 
 #### Northern Hemisphere
-![]()
+![N_Cloud](https://github.com/beccasolomon22/python-api-challenge/blob/main/WeatherPy/output_data/N_Cloud.png)
 
 #### Southern Hemisphere
-![]()
+![S_Cloud](https://github.com/beccasolomon22/python-api-challenge/blob/main/WeatherPy/output_data/S_Cloud.png)
 
 With a .000001 r-squared value in the Northern Hemisphere and a .002 r-squared value in the Southern Hemisphere, there is a low correlation between Latitude and Cloudiness.
 
@@ -64,37 +64,11 @@ Despite low correlation, there are still some conclusions we can come to. This l
 ### Latitude VS Wind Speed
 
 #### Northern Hemisphere
-![]()
+![N_Wind](https://github.com/beccasolomon22/python-api-challenge/blob/main/WeatherPy/output_data/N_Wind.png)
 
 #### Southern Hemisphere
-![]()
+![S_Wind](https://github.com/beccasolomon22/python-api-challenge/blob/main/WeatherPy/output_data/S_Wind.png)
 
 With a .0003 r-squared value in the Northern Hemisphere and a .01 r-squared value in the Southern Hemisphere, there is a very low correlation between Latitude and Wind Speed.
 
 Despite low correlation, there are still some conclusions we can come to. In both Hemispheres, there appears to be far more cities with lower windspeed than higher. It might again be a good next step to compare Wind Speed to other factors besides Latitude. The first factors I would look into would be proximity to large bodies of water and elevation.
-
-With an optimal value of 4 clusters, used KMeans to model, fit, and predict (with the Regular Scaled Data) to group the cryptocurrencies into 4 clusters
-
-![reg_clusters](https://github.com/beccasolomon22/CryptoClustering/blob/main/Images/Reg_Clusters.png) 
-
-## VacationPy Findings
-
-Using the PCA scaled data, created an elbow curve to see what is the optimal number of clusters
-
-![pca_elbow](https://github.com/beccasolomon22/CryptoClustering/blob/main/Images/PCA_Elbow.png) 
-
-With an optimal value of 4 clusters, used KMeans to model, fit, and predict (with the PCA Scaled Data) to group the cryptocurrencies into 4 clusters
-
-![pca_clusters](https://github.com/beccasolomon22/CryptoClustering/blob/main/Images/PCA_Clusters.png) 
-
-## Comparison
-
-Regular          |   PCA
-:-----------------------------------------------------------------:|:-----------------------------------------------------------------:
-![reg_elbow](https://github.com/beccasolomon22/CryptoClustering/blob/main/Images/Reg_Elbow.png) | ![pca_elbow](https://github.com/beccasolomon22/CryptoClustering/blob/main/Images/PCA_Elbow.png) 
-:-----------------------------------------------------------------:|:-----------------------------------------------------------------:
-![reg_clusters](https://github.com/beccasolomon22/CryptoClustering/blob/main/Images/Reg_Clusters.png)   | ![pca_clusters](https://github.com/beccasolomon22/CryptoClustering/blob/main/Images/PCA_Clusters.png) 
-
-Although each uses an optimal 4 clusters, we see a stark change between the Regular and PCA clusters. With PCA we see must more definitive clusters, without as much overlap. 
-
-EX: Cluster 2 in the Regular clusters is nestled within cluster 3. However, in the PCA clusters, cluster 2 is completely separate from cluster 3 and there is very little overlap (a small bit of overlap can be seen with clusters 0 and 3)
